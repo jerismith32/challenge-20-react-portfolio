@@ -3,6 +3,8 @@ import './App.css';
 import About from './components/About/about';
 import Contact from './components/Contact/contact';
 import Nav from './components/Nav/nav';
+import Resume from './components/Resume/resume';
+import Work from './components/Work/work';
 
 // function App() {
 //   return (
@@ -30,7 +32,18 @@ function App() {
   console.log('current Category', currentCategory);
 
   const renderDifferentPages = () => {
-    
+    switch(currentCategory) {
+      case 'about':
+        return <About />
+      case 'work':
+        return <Work />
+      case 'contact':
+        return <Contact />
+      case 'resume':
+        return <Resume />
+      default:
+        return <About />
+    }
   } 
 
   return (
@@ -39,13 +52,7 @@ function App() {
         setCurrentCategory={setCurrentCategory}
       ></Nav>
       <main>
-        {currentCategory === 'about' ? (
-          <>
-            <About></About>
-          </>
-        ) : (
-          <Contact></Contact>
-        )}
+        {renderDifferentPages() }
       </main>
     </div>
   );

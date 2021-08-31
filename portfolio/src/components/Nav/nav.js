@@ -16,13 +16,13 @@ function Nav(props) {
                         <a href="#about" onClick={() => setCurrentCategory('about')}>About Me</a>
                     </li>
                     <li>
-                        <a href="#work">Work</a>
+                        <a href="#work" onClick={() => setCurrentCategory('work')}>Work</a>
                     </li>
                     <li>
                         <a href="#contact" onClick={() => setCurrentCategory('contact')}>Contact Me</a>
                     </li>
                     <li>
-                        <a href="assets/pdf/J.Smith Resume.pdf" target="_blank">Resume</a>
+                        <a href="#resume" onClick={() => setCurrentCategory('resume')}>Resume</a>
                     </li>
               </ul>
             </nav>
