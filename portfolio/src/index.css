@@ -1,0 +1,293 @@
+:root {
+  --pink: #ffe3eb;
+  --gray: #c8c7c7;
+  --navy: #13294B;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--gray);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: var(--navy);
+}
+
+/* Header Start */
+
+header {
+padding: 20px 35px;
+background-color: var(--pink);
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+position: sticky;
+}
+
+header h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 36px;
+  color: var(--gray);
+}
+
+header a {
+  text-decoration: none;
+  color: var(--navy);
+}
+
+header a:hover {
+  background: var(--navy);
+  color: var(--gray);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+  background: var(--navy);
+  color: var(--gray);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+/* Header End */
+
+/* Hero Start */
+
+.hero {
+      /* background-image: url('../images/IMG_7713.jpeg'); */
+      height: 600px;
+      color: var(--gray);
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      /* background-attachment: fixed; */
+      background-position: 80%;
+      font-size: 30px;
+}
+
+/* Hero End */
+
+/* Content Styling Start */
+
+.main-content {
+  display: flex;
+  align-items: stretch;
+  margin-top: 20px;
+}
+.content-title {
+  flex: 0 0 20%;
+  border-right: solid;
+  border-color: var(--pink);
+  border-right-width: thick;
+  text-align-last: center;
+  font-size: 30px;
+
+}
+
+.main-content p {
+  margin-left: 20px;
+  margin-right: 20px;
+  flex: 0 0 75%;
+  font-size: 18px;
+}
+
+.completed-work img {
+  max-width: 95%;
+  height: auto;
+  margin-left: 20px;
+}
+
+#run-buddy {
+  flex: 0 0 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.future-work img {
+  max-width: 75%;
+  height: auto;
+  margin-left: 10px;
+  flex: 0 0 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.contact-methods ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.contact-methods ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  flex: 0 0 75%;
+  color: var(--gray);
+}
+
+.contact-methods ul li a:hover {
+  background: var(--gray);
+  color: var(--pink);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+/* Content Styling End */
+
+
+/* Footer Start */
+footer {
+  background: var(--pink);
+  padding: 40px 35px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+footer h2 {
+  font-size: 30px;
+  margin: 0;
+  color: var(--navy);
+}
+/* Footer End */
+
+/* Media Query for Smaller Desktop Screens */
+@media screen and (max-width: 980px) {
+header {
+  padding-bottom: 0;
+  justify-content: center;
+  position: relative;
+}
+
+header h1 {
+  width: 100%;
+  text-align: center;
+}
+
+header nav ul {
+  margin-top: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+header nav ul li a {
+  font-size: 20px;
+}
+
+footer h2, footer div {
+  text-align: center;
+  width: 100%;
+}
+
+.hero-cta, .hero-form {
+  width: 100%;
+}
+
+.hero-cta {
+  text-align: center;
+}
+
+.section-title {
+  width: 80%;
+}
+
+.trainer {
+  flex: 0 70%;
+}
+
+.contact-info iframe{
+  flex: 1 100%;
+}
+}
+
+/* Media Query for Tablet */
+@media screen and (max-width: 768px) {
+section {
+  padding: 30px 15px;
+}
+
+.step h3 {
+  flex: 1 100%;
+  text-align: center;
+}
+
+.step-info {
+  flex: 2 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.step-img {
+  flex: 0 32%;
+  margin-right: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.step-text {
+  flex: 100%;  
+}
+
+.trainer-bio h3, .trainer-bio h4 {
+  display: block;
+}
+}
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 575px) {
+.hero-form button {
+  width: 100%;
+}
+
+.section-title {
+  width: 95%;
+}
+
+.intro p {
+  width: 100%;
+}
+
+.trainer {
+  flex: 0 100%;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info > * {
+  flex: 0 100%;
+}
+
+.contact-form {
+  order: 3;
+}
+}
