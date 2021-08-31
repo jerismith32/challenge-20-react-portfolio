@@ -1,22 +1,9 @@
 import React, { useState } from 'react';
-import './App.css';
-import About from './components/About/about';
-import Contact from './components/Contact/contact';
+import About from './Pages/About/about';
+import Contact from './Pages/Contact/contact';
 import Nav from './components/Nav/nav';
-import Resume from './components/Resume/resume';
-import Work from './components/Work/work';
-
-// function App() {
-//   return (
-//     <>
-//       <Nav />
-//       <Contact />
-//     </>
-//   );
-// }
-
-// export default App;
-
+import Resume from './Pages/Resume/resume';
+import Work from './Pages/Work/work';
 
 function App() {
   const [categories] = useState([
@@ -54,6 +41,7 @@ function App() {
       <main>
         {renderDifferentPages() }
       </main>
+
     </div>
   );
 }
