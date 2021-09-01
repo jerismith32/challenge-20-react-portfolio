@@ -3,7 +3,8 @@ import About from './Pages/About/about';
 import Contact from './Pages/Contact/contact';
 import Nav from './components/Nav/nav';
 import Resume from './Pages/Resume/resume';
-import Work from './Pages/Work/work';
+import Work from './Pages/Portfolio/portfolio';
+import Footer from './components/Footer/footer';
 
 function App() {
   const [categories] = useState([
@@ -22,8 +23,8 @@ function App() {
     switch(currentCategory) {
       case 'about':
         return <About />
-      case 'work':
-        return <Work />
+      case 'portfolio':
+        return <Portfolio />
       case 'contact':
         return <Contact />
       case 'resume':
@@ -41,7 +42,7 @@ function App() {
       <main>
         {renderDifferentPages() }
       </main>
-
+      <Footer />
     </div>
   );
 }
