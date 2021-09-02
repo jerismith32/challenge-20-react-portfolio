@@ -3,7 +3,7 @@ import About from './Pages/About/about';
 import Contact from './Pages/Contact/contact';
 import Nav from './components/Nav/nav';
 import Resume from './Pages/Resume/resume';
-import Work from './Pages/Portfolio/portfolio';
+import Portfolio from './Pages/Portfolio/portfolio';
 import Footer from './components/Footer/footer';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     {
       name: 'about'
     },
-    { name: 'work'},
+    { name: 'portfolio'},
     { name: 'contact' },
     { name: 'resume' },
   ]);

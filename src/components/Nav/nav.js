@@ -16,7 +16,7 @@ function Nav(props) {
                         <a href="#about" onClick={() => setCurrentCategory('about')}>About Me</a>
                     </li>
                     <li>
-                        <a href="#work" onClick={() => setCurrentCategory('work')}>Work</a>
+                        <a href="#portfolio" onClick={() => setCurrentCategory('portfolio')}>Portfolio</a>
                     </li>
                     <li>
                         <a href="#contact" onClick={() => setCurrentCategory('contact')}>Contact Me</a>
