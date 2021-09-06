@@ -3,7 +3,7 @@ import welcome from '../../assets/images/welcome.jpg';
 
 export default function About() {
     return (
-        <div>
+        <div id="about" className="body">
             <h1>All About Jeri!</h1>
                 <img src={ welcome } className="aboutpicture" style={{ width: "50%" }} alt="Jeri with her golden retriever Dobby" />
                 <p>

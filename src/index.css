@@ -1,26 +1,40 @@
-:root {
-  --pink: #ffe3eb;
-  --gray: #c8c7c7;
-  --navy: #13294B;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
-  color: var(--gray);
+  color: #c8c7c7;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  background-color: var(--navy);
+  background-color: #13294B;
 }
 
+
+
+#about {
+  color: #c8c7c7;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #13294B;
+}
+
+#contact {
+  color: #c8c7c7;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #13294B;
+}
+
+#resume {
+  color: #c8c7c7;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #13294B;
+}
 /* Header Start */
 
 header {
 padding: 20px 35px;
-background-color: var(--pink);
+background-color: #ffe3eb;
 display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
@@ -31,17 +45,17 @@ header h1 {
   font-weight: bold;
   margin: 0;
   font-size: 36px;
-  color: var(--gray);
+  color: #c8c7c7;
 }
 
 header a {
   text-decoration: none;
-  color: var(--navy);
+  color: #13294B;
 }
 
 header a:hover {
-  background: var(--navy);
-  color: var(--gray);
+  background: #13294B;
+  color: #c8c7c7;
   border-radius: 15px;
   text-shadow: none;
 }
@@ -65,8 +79,8 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-  background: var(--navy);
-  color: var(--gray);
+  background: #13294B;
+  color: #c8c7c7;
   border-radius: 15px;
   text-shadow: none;
 }
@@ -78,7 +92,7 @@ header nav ul li a:hover {
 .hero {
       /* background-image: url('../images/IMG_7713.jpeg'); */
       height: 600px;
-      color: var(--gray);
+      color: #c8c7c7;
       background-size: cover;
       display: flex;
       justify-content: center;
@@ -117,7 +131,7 @@ img {
 .content-title {
   flex: 0 0 20%;
   border-right: solid;
-  border-color: var(--pink);
+  border-color: #ffe3eb;
   border-right-width: thick;
   text-align-last: center;
   font-size: 30px;
@@ -166,12 +180,12 @@ img {
   font-weight: lighter;
   font-size: 1.55vw;
   flex: 0 0 75%;
-  color: var(--gray);
+  color: #c8c7c7;
 }
 
 .contact-methods ul li a:hover {
-  background: var(--gray);
-  color: var(--pink);
+  background: #c8c7c7;
+  color: #ffe3eb;
   border-radius: 15px;
   text-shadow: none;
 }
@@ -186,15 +200,15 @@ form {
 input {
   font-size: 1rem;
   padding: 0.25rem;
-  border: 1px solid var(--navy);
+  border: 1px solid #13294B;
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
 }
 
 input:focus {
-  border: 1px solid var(--gray);
-  box-shadow: 0 0 0.25rem --pink(0, 0, 0, 0.5);
+  border: 1px solid #c8c7c7;
+  box-shadow: 0 0 0.25rem #ffe3eb(0, 0, 0, 0.5);
 }
 
 button {
@@ -206,7 +220,7 @@ button {
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--gray);
+  background-color: #c8c7c7;
 }
 
 button:hover {
@@ -221,7 +235,7 @@ button:hover {
 
 /* Footer Start */
 footer {
-  background: var(--pink);
+  background: #ffe3eb;
   padding: 40px 35px;
   display: flex;
   justify-content: flex-end;
@@ -232,18 +246,18 @@ footer {
 footer h2 {
   font-size: 20px;
   margin: 0;
-  color: var(--navy);
+  color: #13294B;
 }
 
 footer a {
   font-size: 15px;
   margin: 0;
-  color: var(--gray);
+  color: #c8c7c7;
 }
 
 footer h4 a:hover {
-  background: var(--navy);
-  color: var(--gray);
+  background: #13294B;
+  color: #c8c7c7;
   border-radius: 15px;
   text-shadow: none;
 }
