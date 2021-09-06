@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import Logo from '../../assets/images/JeriSmithLogo.png';
 
 export default function Footer() {
     return (
@@ -10,6 +11,7 @@ export default function Footer() {
                     </h2>
                 </div> */}
                 <div>
+                    <img src={ Logo } className="logo" style={{ width: "10%" }} alt="Jeri Smith Logo" />
                     <h4>
                         {/* <a href="https://github.com/jerismith32" target="_blank">GitHub</a> */}
                         <a href="https://github.com/jerismith32">GitHub</a>

@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import welcome from '../../assets/images/welcome.jpg';
 
 export default function About() {
     return (
         <div>
             <h1>All About Jeri!</h1>
+                <img src={ welcome } className="aboutpicture" style={{ width: "50%" }} alt="Jeri with her golden retriever Dobby" />
                 <p>
                     Hello! My name is Jeri Smith. I graduated from Butler University majoring in chemistry and minoring in mathmatics. 
                     During my time at Butler, I participated in notable research focused in organic and analytical chemistry. 
