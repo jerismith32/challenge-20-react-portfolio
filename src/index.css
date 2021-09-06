@@ -92,6 +92,11 @@ header nav ul li a:hover {
 
 /* Content Styling Start */
 
+h1 {
+  display: center;
+  text-align: center;
+}
+
 .main-content {
   display: flex;
   align-items: stretch;
@@ -160,6 +165,46 @@ header nav ul li a:hover {
 }
 
 /* Content Styling End */
+
+/* Contact Form Styling*/
+form {
+  width: 40%;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 1px solid var(--navy);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+input:focus {
+  border: 1px solid var(--gray);
+  box-shadow: 0 0 0.25rem --pink(0, 0, 0, 0.5);
+}
+
+button {
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 1px;
+  background-color: var(--gray);
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.contact {
+  position: center;
+  text-align: center;
+}
 
 
 /* Footer Start */
