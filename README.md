@@ -83,7 +83,7 @@
 
 
   ## Link
-  [Deployed Link (through Heroku)](https://drive.google.com/file/d/1caMrx01uYP6cgk4brG44u3GJL8q2D0h8/view)
+  [Deployed Link (through Heroku)](https://challenge-20-react-portfolio.herokuapp.com/)
 
   ## Questions
   [GitHub](https://github.com/jerismith32)
